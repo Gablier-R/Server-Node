@@ -14,7 +14,7 @@ Router.get('/contato', (req, res) => {
 
 app.use(Router)
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
     console.log('http://localhost:3333');
 })
 
